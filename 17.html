@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 600px;
+    height: 400px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: black;
+    background-color: #E3F2FD;
+    border: 12px solid #1E88E5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tall {
+    grid-row: span 3;
+    background-color: white;
+    display: flex;
+    align-items: baseline;
+    padding: 25px;
+}
+
+#id{
+    border-left: none;
+}
+
+#id1{
+    border-left: none;
+    border-top: none;
+}
+
+#id2{
+    border-left: none;
+    border-top: none;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box tall">1</div>
+        <div class="box" id="id">2</div>
+        <div class="box" id="id">3</div>
+        <div class="box" id="id">4</div>
+        <div class="box" id="id">5</div>
+        <div class="box" id="id">6</div>
+        <div class="box" id="id1">7</div>
+        <div class="box" id="id1">8</div>
+        <div class="box" id="id1">9</div>
+        <div class="box" id="id1">10</div>
+        <div class="box" id="id1">11</div>
+        <div class="box" id="id2">12</div>
+        <div class="box" id="id2">13</div>
+        <div class="box" id="id2">14</div>
+        <div class="box" id="id2">15</div>
+        <div class="box" id="id2">16</div>
+    </div>
+</body>
+</html>
